@@ -4,7 +4,7 @@
 
 new_f <- function(x){
   
-  if (!is.numeric(x)) { stop("Obiekt wejściowy x nie jest typu numeric") }
+  if (!is.numeric(x)) { stop("Obiekt wejściowy x nie jest typu numeric - sprawdź wartość argumentu x") }
   
   srednia <- mean(x)
   
@@ -14,14 +14,20 @@ new_f <- function(x){
   
 }
 
+
 # test 1 funkcji 
 
 dane <- 1:10
 
 new_f(x = dane)
 
+
+
 # test 2 - sprawdzamy, czy odporna
 
 new_f(x = letters)
 
 letters |> str()
+
+
+
